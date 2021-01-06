@@ -1,0 +1,82 @@
+X //////////////// WORK CRUDL ADD ///////////////
+X //////////////// WORK ON SUBMIT BUTTON ///////////////
+X //////////////// remore marging from emails ///////////////
+X //////////////// WORK ON HEADER ///////////////
+X //////////////// Finish stuff for today ///////////////
+
+
+
+
+Need fixes : 
+ 1. Dont let the user submit an empty folder
+
+
+nice things to add:
+ 1. make delete MODAL
+ 2. make filter by deleted and unread
+ 3. onClick of one of the options, change its bgc 
+X 4. In about , add navigations to each site
+X 5. add a total of 7-10 emails
+
+
+
+Need to change :
+X 1. Change the Options font family style to something normal
+X 2. Make the compase BTN different from the others
+X 3. remore marging from emails
+X 4. increse input width
+X 5.change modal view color to simillar to header
+
+
+Need to add:
+ 1.Add time created near buttons of a email
+ 2.change emails color maybe?
+
+
+
+ASK :
+X 1.how to make a mobile version for email
+
+
+
+HTML Need to add:
+X 1.fav logo
+X 2.change document name
+X 3.Need to make a mobile version for Phone(About)
+ 
+Other apps needed fixing/adding:
+X 1.homepage footer looking not good
+X 2.change the welcome font family
+ 
+
+
+talk to vika about:
+X 1.which book store to user
+ 3.work on header hamburger on saturday
+
+
+finish today(friday):
+X 1.mobile version for About
+X 2.links to apps for About
+X 3.make 7-10 default emails
+X 4.import books
+
+
+last day:
+ 1.remove logs
+ 2.remove uneccesery comments
+ 
+ 
+
+Important things left to do :
+X 1.ask vika if she can fix the problem with books(when new book is added its not showing up until you click on the other availbe book)
+
+
+
+STUFF FOR TOMARROW:
+X 1.Add nice animation to the Welcome 
+X 2.make a hover animation for books like vika did
+X 3.make the buttons at review look better
+X 4.remove confirm from delete
+X 5.make books header (my books) look better
+X 6.make inputs on books longer

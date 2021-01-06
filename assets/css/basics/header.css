@@ -1,0 +1,97 @@
+/* FONTS  */
+
+@font-face{
+  font-family: bangers;
+  src: url(../../fonts/font-text/Bangers-Regular.ttf);
+}
+@font-face{
+  font-family: archivo;
+  src: url(../../fonts/font-text/Bangers-Regular.ttf);
+}
+
+a{
+  color: rgb(48, 120, 145);
+
+}
+
+
+.navigation-links{
+  display: flex;
+  font-family: bangers;
+}
+
+
+
+.navigation-color{
+  background-color: #97c7dc;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+
+
+
+}
+
+.main-header {
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    font-size: 2em;
+    height: 100px;
+    color: rgb(48, 120, 145);
+
+}
+
+
+
+.navigation-header-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 0px 20px;
+  font-family: archivo;
+
+
+}
+  
+.navigation-header-logo:hover{
+  cursor: default;
+
+}
+
+
+.active {
+    color: rgb(20, 67, 80);
+}
+  
+
+  /* MENU BTN  */
+
+  .menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+ /* no-select-helpers  */
+ .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+
+
+.app-header-home{
+  text-align: center;
+  font-size: 2em;
+}
+
+
+

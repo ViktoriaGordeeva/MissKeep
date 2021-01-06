@@ -1,0 +1,354 @@
+
+/* FONTS  */
+@font-face{
+  font-family: fas;
+  src: url(../../../assets/fonts/font-awesome/fa-solid-900.ttf);
+}
+@font-face{
+  font-family: bangers;
+  src: url(../../../assets/fonts/font-text/Bangers-Regular.ttf);
+}
+
+
+@font-face{
+  font-family: marck;
+  src: url(../../../assets/fonts/font-text/MarckScript-Regular.ttf);
+}
+
+
+
+.mail-main {
+  margin-top: 130px
+}
+
+/* BUTTONS  */
+.fas{
+  font-family: fas;
+  font-size: larger;
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+
+.fas.star::before{
+  content: "";
+}
+.fas.star{
+  color: white;
+}
+.fas.star:hover{
+  color: rgb(245 211 43);
+  cursor: pointer;
+}
+
+
+
+.fas.viewfull::before{
+  content: "" ;
+}
+.fas.viewfull:hover{
+  color: #025f70;
+  cursor: pointer;
+}
+
+
+
+.fas.delete::before{
+  content: "";
+}
+.fas.delete:hover{
+  color: #025f70;
+  cursor: pointer;
+}
+
+
+
+/* EMAIL HTML  */
+.email-container{
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+
+.email-list-container{
+  background-color: rgba(255, 255, 255, 0.623);
+  width: 100%;
+  
+}
+
+.email-options-container{
+  background-color: white;
+  
+}
+
+.btn{
+  padding: 10px;
+  margin: 20px 20px 10px 20px;
+  width: 100px;
+  border: none;
+  font-family: bangers;
+  font-weight: 400;
+  font-size: 1.3rem;
+  outline: none;
+
+
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(116, 112, 112);
+
+}
+
+.btn.email-compose{
+  background-color: inherit;
+  border-radius: 50px;
+  width: 150px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+}
+
+.btn.email-compose:hover{
+  background-color: rgb(116, 112, 112);
+
+}
+
+
+
+.options-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* EMAILS LIST */
+.email-subject{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    list-style: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-bottom: 2px solid #025f70 ;
+    border-radius: 5px;
+    margin: 0;
+    background: #4EB9CD;
+    transition: all 0.75s ;
+    
+}
+
+
+  
+
+
+
+/* EMAIL MODAL  */
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color:#5ca9b8;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+    height: 40vh;
+}
+
+
+
+
+/* MODAL FOR COMEPOSE  */
+
+.modal-header-comepos{
+  padding: 2px 16px;
+  background-color: white;
+  border-bottom: 1px solid rgb(204, 201, 201);
+}
+
+.close-compose{
+  color: grey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-compose:hover,
+.close-compose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-compose-subject{
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 2em;
+}
+
+
+.modal-compose-body{
+  margin-top: 10px;
+  width: 100%;
+  height: 90%;
+  font-size: 1.5em;
+  outline: none;
+  border: none;
+  resize: none;
+
+
+}
+
+
+.modal-body-compose{
+  padding: 2px 16px;
+  height: 40vh;
+}
+
+
+
+.modal-compose-submit{
+  outline: none;
+  border: none;
+  background-color: #d6d3d3;
+  padding: 5px 15px 5px 15px;
+  margin: 10px;
+  font-family: bangers;
+  font-size: 1.5rem;
+  
+}
+.modal-compose-submit:hover{
+  cursor: pointer;
+  background-color: grey;
+ 
+}
+
+/* EMAIL SEARCH INPUT  */
+
+.email-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+.email-search-input{
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.623);
+}
+
+
+
+/* EMAIL SENT MODAL  */
+
+.modal-user-msg{
+  
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+
+}
+
+.modal-success {
+  position: relative;
+  background-color: #2bdf43;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
+  
+}
+
+
+.modal-close-msg{
+  color: grey;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+.modal-close-msg:hover{
+  cursor: pointer;
+  color: black;
+}

@@ -1,0 +1,46 @@
+//////////////// something ///////////////
+CSS:
+v <770 filter fix
+v <600 notes display
+
+v set default color 
+v set default color as random
+
+v set bigger DB
+
+v Pin fun-ty
+search and filter
+v video note
+
+
+v set Miss Book
+Hamburger
+
+
+Email 
+
+v Book - added book is displayed
+vide0
+
+--bgc of all - lighter
+
+header- fixed:
+vv  .navigation-color{
+    position: fixed;
+    top: 0;
+}
+!!! .app-about-header{
+    margin-top: 150px;
+}
+!!! gmail > gmail.CSS
+.mail-main {
+    margin-top: 130px
+}
+            > MailApp.jsx
+            section className = "mail-main"
+
+
+ .book-inputs {
+  margin-left: 20px;
+  margin-top: 180px
+}

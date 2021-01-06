@@ -1,0 +1,342 @@
+/* FONTS  */
+@font-face{
+    font-family: fas;
+    src: url(../../../assets/fonts/font-awesome/fa-solid-900.ttf);
+}
+@font-face{
+    font-family: far;
+    src: url(../../../assets/fonts/font-awesome/fa-regular-400.ttf);
+}
+@font-face{
+    font-family: fab;
+    src: url(../../../assets/fonts/font-awesome/fa-brands-400.ttf);
+}
+
+.keep-main {
+    margin-top: 145px;
+}
+  
+/* BUTTONS  */
+.fas{
+    font-family: fas;
+    font-size: larger;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+.far{
+    font-family: far;
+    font-size: larger;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+.fab{
+    font-family: fab;
+    font-size: larger;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.fas.delete::before{
+    content: "";
+}
+.fas.delete {
+    color:rgb(63, 63, 63);
+}
+.fas.delete:hover{
+    color: rgb(24, 23, 23);
+    cursor: pointer;
+}
+
+.fas.edit::before{
+    content: "";
+}
+.fas.edit {
+    color:rgb(63, 63, 63);
+}
+.fas.edit:hover{
+    color: rgb(24, 23, 23);
+    cursor: pointer;
+}
+.fas.pin::before{
+    content: ""
+}
+.fas.pin {
+    color:rgb(63, 63, 63); 
+}
+.fas.pin:hover{
+    color:rgb(182, 59, 59);
+    cursor: pointer;
+}
+.fas.done::before{
+    content: "";
+}
+.fas.done {
+    color:rgb(63, 63, 63);  
+}
+.fas.done:hover{
+    color:rgb(24, 23, 23);
+    cursor: pointer;
+}
+
+.fas.check::before{
+    content: "";
+    font-size: 1rem
+}
+.fas.check:hover{
+    color: #025f70;
+    cursor: pointer;
+}
+
+.fas.delete-item::before{
+    content: "";
+    font-size: 1rem
+}
+.fas.delete-item:hover{
+    color: #025f70;
+    cursor: pointer;
+}
+
+.fas.add-item::before{
+    content: "";
+    font-size: 1rem
+}
+.fas.add-item:hover{
+    color: #025f70;
+    cursor: pointer;
+}
+.fas.text::before{
+    content: "";
+    font-size: 1.2rem;
+}
+.fas.text {
+    color: darkgrey;
+}
+.fas.text:hover{
+    color: grey;
+    cursor: pointer;
+}
+.far.img::before{
+    content: "";
+    font-size: 1.2rem
+}
+.far.img {
+    color: darkgrey;
+}
+.far.img:hover{
+    color: grey;
+    cursor: pointer;
+}
+.fab.video::before{
+    content: "";
+    font-size: 1.2rem
+}
+.fab.video {
+    color: darkgrey;
+}
+.fab.video:hover{
+    color: grey;
+    cursor: pointer;
+}
+.fas.todo::before{
+    content: "";
+    font-size: 1.2rem
+}
+.fas.todo {
+    color: darkgrey;
+}
+.fas.todo:hover{
+    color: grey;
+    cursor: pointer;
+}
+.fas.create::before{
+    content: "";
+    color: gray;
+    font-size: 1.2rem
+}
+.fas.create:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.keep-header{
+    background: aqua;
+}
+
+.notes {
+    width: 90vw;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 40px;
+}
+.note {
+    background-color: #6494ed;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    -webkit-box-shadow: 8px 8px 8px 0px rgba(150,147,150,1);
+    -moz-box-shadow: 8px 8px 8px 0px rgba(150,147,150,1);
+    box-shadow: 8px 8px 8px 0px rgba(150,147,150,1);
+}
+.note:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 0px 0px 8px 6px rgba(122,120,122,1);
+    -moz-box-shadow: 0px 0px 8px 6px rgba(122,120,122,1);
+    box-shadow: 0px 0px 8px 6px rgba(122,120,122,1);
+
+    transition: all 0.3s
+
+}
+/* note-text */
+.text-text{
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: inherit;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 10px
+  
+}
+.text-settings {
+    text-align: center;
+}
+
+/* note-img */
+.text-img {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px
+}
+.img-container {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-bottom: 5px;
+}
+.note img {
+    width: 100%;
+    object-fit: contain;
+}
+.img-settings {
+    text-align: center;
+}
+.img-edit {
+    margin: 10px;    
+}
+.note-flex {
+    display: flex;
+    justify-content: space-around;
+}
+.note-none {
+    display: none
+}
+
+/* note-todo */
+.todo-settings {
+    text-align: center;
+}
+
+.text-todos {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px
+}
+.todo-item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 10px
+}
+.text-todo {
+    grid-column: span 9;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/* note-creator */
+.note-creator {
+    width: 40%;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.note-creator form {
+    width: 60%;
+}
+.note-creator-inp {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    padding: 10px
+}
+
+.video-container {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+}
+.video-frame {
+    width: 90%;
+}
+
+@media only screen and (max-width: 990px) {
+    .note-creator {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .note-creator {
+        width: 60%;
+    }
+    .note-creator form {
+        width: 60%;
+    }
+    .notes {
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .note-creator {
+        width: 70%;
+    }
+    .notes {
+        width: 90vw;
+        grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    }
+}
+@media only screen and (max-width: 590px) {
+    .note-creator {
+        width: 90%;
+    }
+    .notes {
+        grid-auto-rows: initial;
+    }
+    
+    .note {
+        width: 80%;
+        margin: auto;
+    }
+}

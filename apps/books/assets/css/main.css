@@ -1,0 +1,374 @@
+
+.books-header{
+  font-family: bangers;
+  color: rgb(48, 120, 145);
+  font-size: 2em;
+}
+
+.main-title {
+  font-size: 2em;
+}
+
+.book-list {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr  ;
+}
+
+.book-img {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+
+.book-img:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 8px 6px rgb(50, 127, 179);
+  -moz-box-shadow: 0px 0px 8px 6px rgb(36, 161, 211);
+  box-shadow: 0px 0px 8px 6px rgb(45, 119, 189);
+
+  transition: all 0.3s
+  
+}
+
+.img-container{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.books-header{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.book-search{
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+.book-add{
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+
+
+.modal-book {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-book {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header-book {
+  padding: 2px 16px;
+  background-color: #5ca9b8;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+
+.modal-book-name{
+  text-align: center;
+}
+
+.modal-book-price{
+  text-align: center;
+}
+
+.modal-img{
+  padding: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body span{
+  font-size: larger;
+  
+
+}
+
+.modal-body-book{
+  padding: 2px 16px;
+  background-color: #5ca9b8;
+  color: white;
+  height: 30%;
+}
+
+
+.red{
+  color: red;
+}
+
+.green{
+  color: green;
+}
+
+.modal-book-sale{
+  font-size: larger;
+  -webkit-text-stroke: 1px red; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+
+
+}
+
+
+.navigation-links-header{
+  background-color: #888;
+  padding: 10px;
+  display: flex;
+  font-size: larger;
+  margin: 0 auto;
+}
+
+
+.navigation-links-home{
+  margin-right: 30px;
+}
+
+.navigation-links-book{
+  margin-right: 30px;
+
+}
+
+
+
+.app-header-welcome{
+  margin-top: 50px;
+}
+
+
+.about-title{
+  margin-top: 50px;
+  font-size: 2em;
+
+
+}
+
+
+
+.app-btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+.about-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-text{
+  margin-top: 50px;
+font-size: 2em;
+}
+
+
+.modal-book-review span{
+  color:#3a45c3;
+}
+
+.modal-book-review span:hover{
+  padding: 10px;
+  background-color: #357380;
+}
+
+
+.review-text-area{
+  margin-bottom: 10px;
+
+}
+.text-area-field{
+  border: none;
+  font-size: 1.3em;
+  resize: none;
+  outline: none;
+
+}
+
+.input-score-field{
+  outline: none;
+  border: none;
+  padding: 10px;
+
+}
+
+
+.review-input-score{
+  margin-bottom: 10px;
+}
+
+
+
+.list-new-books{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+  margin-top: 15px;
+	background: #4EB9CD;
+	transition: all 0.75s 
+}
+
+
+.btn-add-books{
+  margin-left: 80px;
+}
+
+.review-form{
+  margin-left: 20px;
+  margin-top: 100px
+}
+
+.books-inputs{
+  margin-left: 20px;
+  margin-top: 120px
+}
+
+
+/* HELPERS  */
+
+.text-center{
+  text-align: center;
+}
+
+
+.review-goBack-btn{
+  border: none;
+  background-color: rgb(125 194 218);
+  padding: 10px;
+  font-size: 1em;
+  font-family: roboto;
+  margin-top: 20px;
+  width: 100px;
+}
+
+.review-add-btn{
+  border: none;
+  background-color: rgb(125 194 218);
+  padding: 10px;
+  font-size: 1em;
+  font-family: roboto;
+}
+
+.review-goBack-btn:hover{
+  cursor: pointer;
+  background-color: rgb(88 156 179);
+
+}
+
+.review-add-btn:hover{
+  cursor: pointer;
+  background-color: rgb(88 156 179);
+}
+
+.review-name{
+  font-family: roboto;
+  color: #5f6564;
+}
+
+.reviews-name2{
+  font-family: roboto;
+  color: #5f6564;
+
+}
+
+.reviews-name2 span {
+  color: #313636;
+
+}
+
+
+@media (max-width: 1100px) {
+
+.book-list {
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-rows: repeat(6,1fr) ;
+
+}
+
+}
+
+@media (max-width: 620px) {
+
+.book-list {
+  grid-template-columns: 1fr  ;
+  grid-template-rows: repeat(20,1fr) ;
+
+}
+
+}
